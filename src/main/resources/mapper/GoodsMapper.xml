@@ -12,4 +12,7 @@
 		(id,zi,shu,name,pin,zhi,ben,cheng,jian,tai,zhu)
 		values(#{id},#{zi},#{shu},#{name},#{pin},#{zhi},#{ben},#{cheng},#{jian},#{tai},#{zhu});
 	</insert>
+	<delete id="deleteGoods" parameterMap="int">
+		delete * from nain where id=#{id}
+	</delete>
 </mapper>

@@ -5,7 +5,7 @@
 <mapper namespace="com.caodongwei.mapper.GoodsMapper">
 	<!-- 查询 -->
 	<select id="selectGoods" resultType="map">
-		select a.* from nian;
+		select a.* from nian
 	</select>
 	<insert id="insertGoods" parameterMap="int">
 		insert into nian

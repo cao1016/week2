@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.caodongwei.mapper.GoodsMapper">
+	<!-- 查询 -->
+	<select id="selectGoods" resultType="map">
+		select a.* from nian
+	</select>
+	<insert id="insertGoods" parameterMap="int">
+		insert into nian
+		(id,zi,shu,name,pin,zhi,ben,cheng,jian,tai,zhu)
+		values(#{id},#{zi},#{shu},#{name},#{pin},#{zhi},#{ben},#{cheng},#{jian},#{tai},#{zhu});
+	</insert>
+</mapper>
